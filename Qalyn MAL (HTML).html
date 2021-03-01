@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="Qalyn MAL (CSS).css">
+    <title>Qalyn calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Qalyn calculator</h1>
+                <form>
+                   <label for="textname">Bride's name:</label>
+                    <div class="mb-3">
+                        <input type="name" class="form-control is-invalid" id="Bname" placeholder="love of my life" required> 
+                        <div class="invalid-feedback">
+                            Please enter a name.
+                        </div>
+                    </div>
+                    <hr> 
+                    <label for="price">Starting bid:</label>
+                    <input type="number" class="form-control" id="bid" value="500" required>
+                    <hr>
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="1"></option>
+                        <option value="1.5">Bachelor's degree</option>
+                        <option value="1.2">College degree</option>
+                        <option value="1.05">High school degree</option>
+                        <option value="0.9">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth:</label><br>
+                    <select id="networth">
+                        <option value="1"></option>
+                        <option value="2">More than 100,000$</option>
+                        <option value="1.5">Between 50,000$ and 100,000$</option>
+                        <option value="1.2">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                    
+                    <label for="skillsss">Bride's skills:</label> 
+
+                    <hr>
+                    <input type="checkbox" value="200" class="skills"> Dombra<br>
+                    <input type="checkbox" value="100" class="skills"> Cook<br>
+                    <input type="checkbox" value="150" class="skills"> Easygoing<br>
+                    <input type="checkbox" value="250" class="skills"> Fine<br>
+                    <hr>
+
+
+                  <!--- <div class="custom-control custom-checkbox" > 
+                    <input type="checkbox" class="custom-control-input" id="skill1" value="100" class="SKLS">
+                    <label class="custom-control-label" for="skill1">Playing on dombra (+100$)</label>
+                  </div>  
+
+                    <div class="custom-control custom-checkbox" > 
+                      <input type="checkbox" class="custom-control-input" id="skill2" value="200" class="SKLS">
+                    <label class="custom-control-label" for="skill2">Good cook (+200$)</label>
+                  </div>
+
+                     <div class="custom-control custom-checkbox" > 
+                    <input type="checkbox" class="custom-control-input" id="skill3" value="150" class="SKLS">
+                    <label class="custom-control-label" for="skill3">Easygoing character (+150$)</label>
+                  </div>
+
+                     <div class="custom-control custom-checkbox" > 
+                    <input type="checkbox" class="custom-control-input" id="skill4" value="100" class="SKLS">
+                    <label class="custom-control-label" for="skill4">Sings well (+100$)</label>
+                  </div> 
+                  <hr> -->
+
+                  <label for="age">Bride's age:</label>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="age1" name="radio" class="custom-control-input" value="1.5">
+                    <label class="custom-control-label" for="age1">Between 18-23</label>
+                  </div>
+
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="age2" name="radio" class="custom-control-input" value="1.2">
+                    <label class="custom-control-label" for="age2">Between 24-27</label>
+                  </div>
+
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="age3" name="radio" class="custom-control-input" value="0.95">
+                    <label class="custom-control-label" for="age3">28+</label>
+                  </div> <hr>
+                  
+                  <label for="reputation">Bride's reputation:</label>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="reputation1" value="0.85">
+                    <label class="custom-control-label" for="reputation1">Gossips about his/her parent's attitude</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="reputation2" value="0.9">
+                    <label class="custom-control-label" for="reputation2">Gossips about his/her character</label>
+                  </div> 
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="reputation3" value="-200">
+                    <label class="custom-control-label" for="reputation3">General gossips around his/her person</label>
+                  </div> 
+                  <hr>
+                  <div class="mb-3">
+                    <label for="Love letter">Love letter:</label>
+                    <textarea class="form-control is-invalid" id="Love_letter" placeholder="Dear..." maxlength = "500" required></textarea>
+                    <div class="invalid-feedback">
+                      Please enter a message in the Love letter.
+                    </div>
+                  </div>
+
+
+
+                    <!-- CONTINUE YOUR ASSIGNMENT HERE!!! -->
+                </form>
+                <button id="submit" type="button" class="btn btn-primary">Calculate price</button>
+                <h2 class="cal">Calculate</h2>
+                <h4 class="Calculate"></h4>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Qalyn MAL (JS).js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
